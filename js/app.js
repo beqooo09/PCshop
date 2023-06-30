@@ -10,7 +10,7 @@ setTimeout(() => {
     }
 
 }, 1500)
-
+ 
 // Variablat per pjesen e navigaton menu
 const navigationHeader = document.querySelector('header#navigation-header');
 const navigationHeaderLinks = document.querySelectorAll('header#navigation-header .nav-links');

@@ -16,4 +16,4 @@ if ('speechSynthesis' in window) {
 
 } else {
     console.log('Text-to-speech not supported.');
-}
+} 

@@ -18,7 +18,7 @@ var particles = [],
       color4: '#247BA0',
       color5: '#70C1B3',
       backgroundColor: '#EEEEEE'
-    };
+    }; 
 
 /**********************************************************************/
 var gui = new dat.GUI();

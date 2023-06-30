@@ -10,7 +10,7 @@ scene.add(hemiLight);
 
 var light = new THREE.SpotLight(0xffa95c,4);
 light.position.set(-50,100,150);
-light.castShadow = true;
+light.castShadow = true; 
 light.shadow.bias = -0.0001;
 light.shadow.mapSize.width = 1024;
 light.shadow.mapSize.height = 1024;

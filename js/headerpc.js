@@ -12,7 +12,7 @@ const images = [
     ["Gaming Potential", "Experience the Thrills, Speed, and Immersion Like Never Before"],
   ]
   
-  rgbKineticSlider = new rgbKineticSlider({
+  rgbKineticSlider = new rgbKineticSlider({ 
   
     slideImages: images, // array of images > must be 1920 x 1080
     itemsTitles: texts, // array of titles / subtitles
