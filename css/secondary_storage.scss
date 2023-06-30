@@ -1,0 +1,117 @@
+@import './mixins';
+
+section#secondary-storage-header {
+    height: fit-content;
+
+    img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+section#secondary-storage-explanation {
+    min-height: 100vh;
+    height: 100%;
+    padding: 100px 0;
+    background: rgb(236, 236, 236);
+
+    @include flexContent(center, center);
+
+    .container {
+        @include flexContent(space-around, center, column);
+    }
+
+    .what-is-secondary-storage {
+        max-width: 70vw;
+
+        h1.title {
+            font-size: 2.5rem;
+            letter-spacing: 3px;
+        }
+
+        p.description {
+            padding: 30px 0;
+            line-height: 30px;
+            font-size: 1.1em;
+        }
+
+        img {
+            max-width: 70vw;
+            width: 100%;
+            margin-top: 30px;
+        }
+    }
+}
+
+section#secondary-storage-video-section {
+    min-height: 100vh;
+    height: 100%;
+
+    .container {
+        @include flexContent(center, center);
+    }
+
+    .video-explanation {
+        @include flexContent(center, center, column);
+
+
+        .title {
+            font-size: 2.5rem;
+            letter-spacing: 3px;
+            text-align: center;
+        }
+
+        .description {
+            padding: 30px 10vw;
+            line-height: 30px;
+            font-size: 1.1em;
+            max-width: 90%;
+        }
+
+        video {
+            max-width: 100%;
+        }
+    }
+}
+
+#secondary-storage-devices {
+    padding: 50px 0;
+
+    .title {
+        text-align: center;
+        padding: 0 10vw 30px 10vw;
+        h1 {
+            letter-spacing: 2px;
+        }
+    }
+
+    .devices {
+        width: 100%;
+        @include flexContent(space-evenly, center);
+        flex-wrap: wrap;
+
+        .image-container {
+            position: relative;
+            img {
+                max-width: 250px;
+                margin: 30px 0;
+                object-fit: cover;
+                transition: filter 0.4s, transform 0.1s;
+                cursor: pointer;
+                &:hover {
+                    filter: drop-shadow(5px 5px 10px black);
+                    transform: scale(1.1);
+                }
+            }
+            &::after {
+                content: attr(data-label);
+                position: absolute;
+                bottom: 0;
+                left: 50%;
+                transform: translateX(-50%);
+                font-weight: 600;
+            }
+        }
+    }
+}

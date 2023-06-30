@@ -1,0 +1,252 @@
+#header-hero {
+  min-height: 50vh;
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+#header-hero .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+#header-hero .description {
+  text-align: center;
+}
+
+#header-hero .description h1 {
+  font-size: 1.6em;
+}
+
+#header-hero .description p {
+  padding-top: 15px;
+  padding-bottom: 30px;
+  font-size: 0.9em;
+}
+
+#header-hero .description button {
+  padding: 15px;
+  background: #1ac4e6;
+  color: white;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+#prebuild-pc-section {
+  min-height: 100vh;
+  width: 100vw;
+}
+
+#prebuild-pc-section .computers {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  max-width: 100%;
+}
+
+#prebuild-pc-section .computers .single-pc {
+  padding: 50px 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#prebuild-pc-section .computers .single-pc .top-part {
+  text-align: center;
+}
+
+#prebuild-pc-section .computers .single-pc .top-part h5 {
+  color: #1ac4e6;
+}
+
+#prebuild-pc-section .computers .single-pc .top-part * {
+  padding: 3px 0;
+}
+
+#prebuild-pc-section .computers .single-pc .top-part .price-btn {
+  background-color: #1ac4e6;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+#prebuild-pc-section .computers .single-pc .bottom-part {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#prebuild-pc-section .computers .single-pc .bottom-part img {
+  width: 200px;
+  height: 400px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#prebuild-pc-section .computers .single-pc .bottom-part .pc-colors {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 16px 0;
+}
+
+#prebuild-pc-section .computers .single-pc .bottom-part .pc-colors .color {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  margin: 0 5px;
+  list-style: none;
+}
+
+#prebuild-pc-section .computers .single-pc .bottom-part .pc-colors .color.originred {
+  background: -webkit-gradient(linear, left top, left bottom, from(#e53e44), to(#a82d31));
+  background: linear-gradient(#e53e44, #a82d31);
+}
+
+#prebuild-pc-section .computers .single-pc .bottom-part .pc-colors .color.originwhite {
+  background: -webkit-gradient(linear, left top, left bottom, from(#fafbff), to(#dddee2));
+  background: linear-gradient(#fafbff, #dddee2);
+}
+
+#prebuild-pc-section .computers .single-pc .bottom-part .pc-colors .color.eternalpink {
+  background: -webkit-gradient(linear, left top, left bottom, from(#d69bb1), to(#82425a));
+  background: linear-gradient(#d69bb1, #82425a);
+}
+
+#prebuild-pc-section .computers .single-pc .bottom-part .pc-colors .color.sabotgrey {
+  background: -webkit-gradient(linear, left top, left bottom, from(#aca9a6), to(#3b3b3b));
+  background: linear-gradient(#aca9a6, #3b3b3b);
+}
+
+#prebuild-pc-section .computers .single-pc .bottom-part .pc-colors .color.evolvegreen {
+  background: -webkit-gradient(linear, left top, left bottom, from(#edfe5d), to(#7ead26));
+  background: linear-gradient(#edfe5d, #7ead26);
+}
+
+#prebuild-pc-section .computers .single-pc .bottom-part .specifications {
+  list-style: none;
+  font-size: 14px;
+  padding: 0 15px;
+  line-height: 18px;
+  border-right: 1px solid gray;
+}
+
+#prebuild-pc-section .computers .single-pc .bottom-part .specifications li {
+  margin-bottom: 10px;
+}
+
+#prebuild-pc-section .computers .single-pc .bottom-part button {
+  margin-top: 2em;
+  padding: 10px 20px;
+  background-color: transparent;
+  border: 2px solid #4d4d4d;
+  cursor: pointer;
+}
+
+#prebuild-pc-section .computers .single-pc:nth-child(1) {
+  -webkit-animation: singlePcAnimation 0.5s 1s forwards;
+          animation: singlePcAnimation 0.5s 1s forwards;
+  opacity: 0;
+}
+
+#prebuild-pc-section .computers .single-pc:nth-child(2) {
+  -webkit-animation: singlePcAnimation 0.5s 1.5s forwards;
+          animation: singlePcAnimation 0.5s 1.5s forwards;
+  opacity: 0;
+}
+
+#prebuild-pc-section .computers .single-pc:nth-child(3) {
+  -webkit-animation: singlePcAnimation 0.5s 2s forwards;
+          animation: singlePcAnimation 0.5s 2s forwards;
+  opacity: 0;
+}
+
+#prebuild-pc-section .computers .single-pc:nth-child(4) {
+  -webkit-animation: singlePcAnimation 0.5s 2.5s forwards;
+          animation: singlePcAnimation 0.5s 2.5s forwards;
+  opacity: 0;
+}
+
+@-webkit-keyframes singlePcAnimation {
+  from {
+    -webkit-transform: translateX(-50px);
+            transform: translateX(-50px);
+  }
+  to {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes singlePcAnimation {
+  from {
+    -webkit-transform: translateX(-50px);
+            transform: translateX(-50px);
+  }
+  to {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@media (max-width: 1024px) {
+  #prebuild-pc-section .computers {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 500px) {
+  #prebuild-pc-section .computers {
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+  }
+}
+/*# sourceMappingURL=prebuildpc.css.map */

@@ -1,11 +1,229 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Pre Built PC</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/prebuildpc.css">
+    <link rel="stylesheet" href="./css/styleBTT.css" />
+    <title>Pre Built PC</title>
 </head>
+
 <body>
-  
+    <header id="navigation-header">
+        <div class="container">
+            <div class="header-logo">
+                <a href="index.html"><img src="img/BlackLogo.png" style="width:100px; height:100px;" alt="PC Expert"></a>
+            </div>
+
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="/index.html" class="nav-links">Home</a></li>
+                    <li><a href="/prebuildpc.html" class="nav-links">Pre-Build PC</a></li>
+                    <li><a href="/3D-Motherboard.html" class="nav-links">3D Motherboard</a>
+                    <li><a href="#" class="nav-links">View More</a>
+                        <ul>
+                            <li><a href="./computer.html">Computer</a></li>
+                            <li><a href="./secondary-storage.html">Storage</a></li>
+                            <li><a href="./gpu.html">GPU</a></li>
+                            <li><a href="./cpu.html">CPU</a></li>
+                            <li><a href="./motherboard.html">Motherboard</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="hamburger-menu">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+    </header>
+
+    <section id="header-hero">
+        <div class="container">
+            <div class="description">
+                <h1>Choose your Gaming Desktop</h1>
+                <p>Small Form Factor, Mid Tower, Full Tower, and Super Tower Configurations</p>
+                <button>Custom Desktops</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="prebuild-pc-section">
+        <div class="container">
+            <div class="computers">
+                <div class="single-pc">
+                    <div class="top-part">
+                        <h3>CHRONOS</h3>
+                        <h4><strong>Small Factor</strong></h4>
+                        <h5>Small Footprint, Big Power</h5>
+                        <p>Starting at: $1.637 <br><span>or as low as $38.94/month</span></p>
+                        <button class="price-btn" data-price="$1637">Click to hear the price</button>
+                    </div>
+                    <div class="bottom-part">
+                        <picture>
+                            <source srcset="img/pc-one-image.webp" type="image/webp">
+                                <source srcset="img/pc-one-image.png" type="image/png">
+                            <img src="img/pc-one-image.png" alt="Chronos">
+                        </picture>
+                        <ul class="pc-colors">
+                            <li class="color originred"></li>
+                            <li class="color originwhite"></li>
+                            <li class="color eternalpink"></li>
+                            <li class="color sabotgrey"></li>
+                            <li class="color evolvegreen"></li>
+                        </ul>
+                        <ul class="specifications">
+                            <li>Exclusive ORIGIN PC small form factor design that can fit in small spaces vertically or horizontally</li>
+                            <li>Up to an AMD Ryzen 9 3900X or Intel Core i9-10900KF CPU</li>
+                            <li>FROSTBYTE CPU liquid cooling</li>
+                            <li>Up to a single NVIDIA TITAN RTX GPU</li>
+                            <li>GPU side window with optional RGB LED lighting</li>
+                            <li>Up to 32GB of DDR4 RAM 3200MHz</li>
+                            <li>Up to a 750 Watt power supply</li>
+                            <li>Multiple storage options available including M.2 PCIe SSD, SSD, HDD, and more</li>
+                        </ul>
+                        <button class="learn-more">Learn More</button>
+                    </div>
+                </div>
+                <div class="single-pc">
+                    <div class="top-part">
+                        <h3>NEURON</h3>
+                        <h4><strong>Mid Tower</strong></h4>
+                        <h5>Premium Style and Excellent Value</h5>
+                        <p>Starting at: $1,571 <br><span>or as low as $37.37/month</span></p>
+                        <button class="price-btn" data-price="$1571">Click to hear the price</button>
+                    </div>
+                    <div class="bottom-part">
+                        <picture>
+                            <source srcset="img/pc-two-image.webp" type="image/webp">
+                                <source srcset="img/pc-two-image.png" type="image/png">
+                            <img src="img/pc-two-image.png" alt="Chronos">
+                        </picture>
+                        <ul class="pc-colors">
+                            <li class="color originred"></li>
+                            <li class="color originwhite"></li>
+                            <li class="color eternalpink"></li>
+                            <li class="color sabotgrey"></li>
+                            <li class="color evolvegreen"></li>
+                        </ul>
+                        <ul class="specifications">
+                            <li>Exclusive ORIGIN PC mid tower design with the best value for an ORIGIN PC desktop</li>
+                            <li>Up to an AMD Ryzen 9 3900X or Intel Core i9-10900KF CPU</li>
+                            <li>FROSTBYTE CPU liquid cooling</li>
+                            <li>Up to dual NVIDIA GeForce RTX 2080 Ti GPUs</li>
+                            <li>GPU side window with optional RGB LED lighting</li>
+                            <li>Up to 64GB of DDR4 RAM 3466MHz</li>
+                            <li>Up to a 1000 Watt power supply</li>
+                            <li>Multiple storage options available including M.2 PCIe SSD, SSD, HDD, and more</li>
+                        </ul>
+                        <button class="learn-more">Learn More</button>
+                    </div>
+                </div>
+                <div class="single-pc">
+                    <div class="top-part">
+                        <h3>MILLENIUM</h3>
+                        <h4><strong>Full Tower</strong></h4>
+                        <h5>The Most Advanced and Customizable Desktop</h5>
+                        <p>Starting at: $2,012 <br><span>or as low as $47.85/month</span></p>
+                        <button class="price-btn" data-price="$2012">Click to hear the price</button>
+                    </div>
+                    <div class="bottom-part">
+                        <picture>
+                            <source srcset="img/pc-three-image.webp" type="image/webp">
+                                <source srcset="img/pc-three-image.png" type="image/png">
+                            <img src="img/pc-three-image.png" alt="Chronos">
+                        </picture>
+                        <ul class="pc-colors">
+                            <li class="color originred"></li>
+                            <li class="color originwhite"></li>
+                            <li class="color eternalpink"></li>
+                            <li class="color sabotgrey"></li>
+                            <li class="color evolvegreen"></li>
+                        </ul>
+                        <ul class="specifications">
+                            <li>Exclusive ORIGIN PC small form factor design that can fit in small spaces vertically or horizontally</li>
+                            <li>Up to an AMD Ryzen 9 3900X or Intel Core i9-10900KF CPU</li>
+                            <li>FROSTBYTE CPU liquid cooling</li>
+                            <li>Up to a single NVIDIA TITAN RTX GPU</li>
+                            <li>GPU side window with optional RGB LED lighting</li>
+                            <li>Up to 32GB of DDR4 RAM 3200MHz</li>
+                            <li>Up to a 750 Watt power supply</li>
+                            <li>Multiple storage options available including M.2 PCIe SSD, SSD, HDD, and more</li>
+                        </ul>
+                        <button class="learn-more">Learn More</button>
+                    </div>
+                </div>
+                <div class="single-pc">
+                    <div class="top-part">
+                        <h3>GENESIS</h3>
+                        <h4><strong>Super Tower</strong></h4>
+                        <h5>A Desktop Without Limitations</h5>
+                        <p>Starting at: $2.015 <br><span>or as low as $47.94/month</span></p>
+                        <button class="price-btn" data-price="$2015">Click to hear the price</button>
+                    </div>
+                    <div class="bottom-part">
+                        <picture>
+                            <source srcset="img/pc-four-image.webp" type="image/webp">
+                                <source srcset="img/pc-four-image.png" type="image/png">
+                            <img src="img/pc-four-image.png" alt="Chronos">
+                        </picture>
+                        <ul class="pc-colors">
+                            <li class="color originred"></li>
+                            <li class="color originwhite"></li>
+                            <li class="color eternalpink"></li>
+                            <li class="color sabotgrey"></li>
+                            <li class="color evolvegreen"></li>
+                        </ul>
+                        <ul class="specifications">
+                            <li>Exclusive ORIGIN PC small form factor design that can fit in small spaces vertically or horizontally</li>
+                            <li>Up to an AMD Ryzen 9 3900X or Intel Core i9-10900KF CPU</li>
+                            <li>FROSTBYTE CPU liquid cooling</li>
+                            <li>Up to a single NVIDIA TITAN RTX GPU</li>
+                            <li>GPU side window with optional RGB LED lighting</li>
+                            <li>Up to 32GB of DDR4 RAM 3200MHz</li>
+                            <li>Up to a 750 Watt power supply</li>
+                            <li>Multiple storage options available including M.2 PCIe SSD, SSD, HDD, and more</li>
+                        </ul>
+                        <button class="learn-more">Learn More</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="progress">
+        <span id="progress-value">&#x1F815;</span>
+      </div>
+      <script src="./js/scriptB.js"></script>
+
+    <section id="footer">
+        <div class="container">
+            <footer>
+
+                <div class="footer-container">
+                    <div class="left-container">
+                        <img src="img/BlackLogo.png" alt="" class="logo">
+                        <div class="social-media">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i
+                                    class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-youtube"></i></a>
+                        </div>
+                        <p class="rights-text">© 2023 Copyright | All Rights Reserved </p>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </section>
+
+    <script src="/js/app.js"></script>
+    <script src="/js/prebuildpc.js"></script>
+
 </body>
+
 </html>

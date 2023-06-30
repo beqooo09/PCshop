@@ -1,0 +1,188 @@
+section#secondary-storage-header {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+section#secondary-storage-header img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+section#secondary-storage-explanation {
+  min-height: 100vh;
+  height: 100%;
+  padding: 100px 0;
+  background: #ececec;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+section#secondary-storage-explanation .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+section#secondary-storage-explanation .what-is-secondary-storage {
+  max-width: 70vw;
+}
+
+section#secondary-storage-explanation .what-is-secondary-storage h1.title {
+  font-size: 2.5rem;
+  letter-spacing: 3px;
+}
+
+section#secondary-storage-explanation .what-is-secondary-storage p.description {
+  padding: 30px 0;
+  line-height: 30px;
+  font-size: 1.1em;
+}
+
+section#secondary-storage-explanation .what-is-secondary-storage img {
+  max-width: 70vw;
+  width: 100%;
+  margin-top: 30px;
+}
+
+section#secondary-storage-video-section {
+  min-height: 100vh;
+  height: 100%;
+}
+
+section#secondary-storage-video-section .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+section#secondary-storage-video-section .video-explanation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+section#secondary-storage-video-section .video-explanation .title {
+  font-size: 2.5rem;
+  letter-spacing: 3px;
+  text-align: center;
+}
+
+section#secondary-storage-video-section .video-explanation .description {
+  padding: 30px 10vw;
+  line-height: 30px;
+  font-size: 1.1em;
+  max-width: 90%;
+}
+
+section#secondary-storage-video-section .video-explanation video {
+  max-width: 100%;
+}
+
+#secondary-storage-devices {
+  padding: 50px 0;
+}
+
+#secondary-storage-devices .title {
+  text-align: center;
+  padding: 0 10vw 30px 10vw;
+}
+
+#secondary-storage-devices .title h1 {
+  letter-spacing: 2px;
+}
+
+#secondary-storage-devices .devices {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#secondary-storage-devices .devices .image-container {
+  position: relative;
+}
+
+#secondary-storage-devices .devices .image-container img {
+  max-width: 250px;
+  margin: 30px 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-transition: -webkit-filter 0.4s, -webkit-transform 0.1s;
+  transition: -webkit-filter 0.4s, -webkit-transform 0.1s;
+  transition: filter 0.4s, transform 0.1s;
+  transition: filter 0.4s, transform 0.1s, -webkit-filter 0.4s, -webkit-transform 0.1s;
+  cursor: pointer;
+}
+
+#secondary-storage-devices .devices .image-container img:hover {
+  -webkit-filter: drop-shadow(5px 5px 10px black);
+          filter: drop-shadow(5px 5px 10px black);
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+#secondary-storage-devices .devices .image-container::after {
+  content: attr(data-label);
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  font-weight: 600;
+}
+/*# sourceMappingURL=secondary_storage.css.map */

@@ -1,0 +1,259 @@
+#gpu-header {
+  min-height: 90vh;
+  height: 100%;
+  position: relative;
+}
+
+#gpu-header .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+#gpu-header .header-desc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  padding: 100px 0;
+}
+
+#gpu-header .header-desc .card-box {
+  padding: 50px 30px;
+  width: 100%;
+  max-width: 40vw;
+  -webkit-box-shadow: -30px -30px 60px -70px gray, 30px 30px 60px -70px gray;
+          box-shadow: -30px -30px 60px -70px gray, 30px 30px 60px -70px gray;
+}
+
+#gpu-header .header-desc .card-box .title {
+  word-wrap: break-word;
+}
+
+#gpu-header .header-desc .card-box .title h1 {
+  font-size: 2em;
+  text-transform: uppercase;
+}
+
+#gpu-header .header-desc .card-box .description h5 {
+  font-size: 1.2em;
+  color: #111111;
+  padding: 25px 0;
+}
+
+#gpu-header .header-desc .image {
+  width: 35%;
+}
+
+#gpu-header .header-desc .image img {
+  width: 100%;
+}
+
+#gpu-header .go-bottom {
+  position: absolute;
+  bottom: 5px;
+  left: 50%;
+  -webkit-transform: translate(-50%, -5px) rotate(90deg);
+          transform: translate(-50%, -5px) rotate(90deg);
+  font-size: 26px;
+  border: none;
+  outline: none;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  border-radius: 50%;
+  background: gray;
+  color: white;
+}
+
+#gpu-header .go-bottom:hover {
+  background: #1a1a1a;
+}
+
+section#gpu-explanation {
+  min-height: 100vh;
+  height: 100%;
+  background: #ececec;
+  padding: 50px 0;
+}
+
+section#gpu-explanation .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+section#gpu-explanation .what-is-gpu {
+  width: 70vw;
+  padding: 10px 50px;
+}
+
+section#gpu-explanation .what-is-gpu h1.title {
+  font-size: 2.5rem;
+  letter-spacing: 3px;
+}
+
+section#gpu-explanation .what-is-gpu p.description {
+  padding-top: 30px;
+  line-height: 30px;
+  font-size: 1.1em;
+}
+
+section#gpu-explanation video {
+  max-width: 100vw;
+}
+
+section#gpu-parts {
+  min-height: 100vh;
+  width: 100vw;
+  padding: 50px 0;
+}
+
+section#gpu-parts .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+section#gpu-parts .parts-describe {
+  width: 70vw;
+  padding: 0 50px;
+}
+
+section#gpu-parts .parts-describe h1.title {
+  letter-spacing: 3px;
+  font-size: 2.5em;
+}
+
+section#gpu-parts .parts-describe .description {
+  padding: 70px 0;
+  font-size: 1.3em;
+  line-height: 30px;
+}
+
+section#gpu-parts .parts-describe .parts-list {
+  font-size: 1.3em;
+  padding: 0 10px;
+}
+
+section#gpu-parts .parts-describe .parts-list .specific-part {
+  color: black;
+  margin: 8px 0;
+}
+
+section#gpu-parts .parts-describe .parts-list .specific-part .nav-link {
+  color: black;
+  font-weight: 800;
+}
+
+section#gpu-parts .parts-images {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+section#gpu-parts .parts-images .image-container {
+  position: relative;
+  min-height: 250px;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section#gpu-parts .parts-images .image-container picture img {
+  width: 250px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-filter: drop-shadow(8px 5px 10px black);
+          filter: drop-shadow(8px 5px 10px black);
+}
+
+section#gpu-parts .parts-images .image-container:hover img {
+  -webkit-filter: drop-shadow(15px 10px 10px black) grayscale(1);
+          filter: drop-shadow(15px 10px 10px black) grayscale(1);
+}
+
+section#gpu-parts .parts-images .image-container:hover::after {
+  content: attr(data-label);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  color: white;
+  -webkit-filter: drop-shadow(2px 2px 5px black);
+          filter: drop-shadow(2px 2px 5px black);
+  font-weight: bolder;
+}
+
+@media screen and (max-width: 768px) {
+  #gpu-header {
+    min-height: 100vh;
+    height: 100%;
+    position: relative;
+  }
+  #gpu-header .header-desc {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #gpu-header .header-desc .card-box {
+    width: 100%;
+  }
+  #gpu-header .header-desc .image {
+    width: 50%;
+  }
+}
+
+/*# sourceMappingURL=gpu.css.map */

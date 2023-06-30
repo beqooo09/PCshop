@@ -1,0 +1,204 @@
+@import './mixins';
+
+#motherboard-header {
+    min-height: 90vh;
+    height: 100%;
+    position: relative;
+
+    .container {
+        @include flexContent(space-between, center);
+    }
+
+    .header-desc {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        padding: 100px 0;
+
+        .card-box {
+            padding: 50px 30px;
+            width: 100%;
+            max-width: 40vw;
+            box-shadow: -30px -30px 60px -70px gray, 30px 30px 60px -70px gray;
+
+            .title {
+                word-wrap: break-word;
+
+                h1 {
+                    font-size: 2em;
+                    text-transform: uppercase;
+                }
+            }
+
+            .description {
+                h5 {
+                    font-size: 1.2em;
+                    color: rgb(17, 17, 17);
+                    padding: 25px 0;
+                }
+            }
+        }
+        .image {
+            width: 35%;
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+
+    .go-bottom {
+        position: absolute;
+        bottom: 5px;
+        left: 50%;
+        transform: translate(-50%, -5px) rotate(90deg);
+        font-size: 26px;
+        border: none;
+        outline: none;
+        width: 50px;
+        height: 50px;
+        cursor: pointer;
+        border-radius: 50%;
+        background: gray;
+        color: white;
+
+        &:hover {
+            background: rgb(26, 26, 26);
+        }
+    }
+
+}
+
+section#motherboard-explanation {
+    min-height: 100vh;
+    height: 100%;
+    background: rgb(236, 236, 236);
+    padding: 50px 0;
+
+    .container {
+        @include flexContent(space-around, center, column);
+    }
+
+    .what-is-motherboard {
+        width: 70vw;
+        padding: 10px 50px;
+
+        h1.title {
+            font-size: 2.5rem;
+            letter-spacing: 3px;
+        }
+
+        p.description {
+            padding-top: 30px;
+            line-height: 30px;
+            font-size: 1.1em;
+        }
+    }
+
+    video {
+        max-width: 100vw;
+    }
+}
+
+section#motherboard-parts {
+    min-height: 100vh;
+    width: 100vw;
+    padding: 50px 0;
+
+    .container {
+        @include flexContent(space-around, center, column);
+    }
+
+    .parts-describe {
+        width: 70vw;
+        padding: 0 50px;
+
+        h1.title {
+            letter-spacing: 3px;
+            font-size: 2.5em;
+        }
+
+        .description {
+            padding: 70px 0;
+            font-size: 1.3em;
+            line-height: 30px;
+        }
+
+        .parts-list {
+            font-size: 1.3em;
+            padding: 0 10px;
+
+            .specific-part {
+                color: black;
+                margin: 8px 0;
+
+                .nav-link {
+                    color: black;
+                    font-weight: 800;
+                }
+            }
+        }
+    }
+
+    .parts-images {
+        @include flexContent(center, center);
+        flex-wrap: wrap;
+
+        .image-container {
+            position: relative;
+            min-height: 250px;
+            height: 100%;
+            display: flex;
+            align-items: center;
+
+            picture {
+                img {
+                    width: 250px;
+                    object-fit: cover;
+                    filter: drop-shadow(8px 5px 10px black);
+                }
+            }
+
+            &:hover {
+                img {
+                    filter: drop-shadow(15px 10px 10px black) grayscale(1);
+                }
+
+                &::after {
+                    content: attr(data-label);
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    color: white;
+                    filter: drop-shadow(2px 2px 5px black);
+                    font-weight: bolder;
+                }
+            }
+        }
+
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    #motherboard-header {
+        min-height: 100vh;
+        height: 100%;
+        position: relative;
+
+        .header-desc {
+            flex-direction: column;
+
+            .card-box {
+                width: 100%;
+            }
+
+            .image {
+                width: 50%;
+            }
+        }
+    }
+
+}

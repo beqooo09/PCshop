@@ -1,0 +1,192 @@
+@import './mixins';
+
+#header-hero {
+    min-height: 50vh;
+    height: 100%;
+    width: 100%;
+    @include flexContent(center, center);
+
+    .container {
+        @include flexContent(center, center);
+    }
+
+    .description {
+        text-align: center;
+
+        h1 {
+            font-size: 1.6em;
+        }
+
+        p {
+            padding-top: 15px;
+            padding-bottom: 30px;
+            font-size: 0.9em;
+        }
+
+        button {
+            padding: 15px;
+            background: hsl(190, 80, 50);
+            color: white;
+            outline: none;
+            border: none;
+            cursor: pointer;
+        }
+    }
+}
+
+
+#prebuild-pc-section {
+    min-height: 100vh;
+    width: 100vw;
+
+    .computers {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        max-width: 100%;
+
+        .single-pc {
+
+            padding: 50px 10px;
+            @include flexContent(center, center, column);
+
+            .top-part {
+                text-align: center;
+
+                h5 {
+                    color: hsl(190, 80, 50);
+                }
+
+                * {
+                    padding: 3px 0;
+                }
+                .price-btn {
+                    background-color: hsl(190, 80, 50);
+                    padding: 10px; 
+                    border: none;
+                    cursor: pointer;
+                }
+            }
+
+            .bottom-part {
+                @include flexContent(center, center, column);
+
+                img {
+                    width: 200px;
+                    height: 400px;
+                    object-fit: cover;
+                }
+
+                .pc-colors {
+                    display: flex;
+                    padding: 16px 0;
+
+                    .color {
+                        width: 18px;
+                        height: 18px;
+                        border-radius: 50%;
+                        margin: 0 5px;
+                        list-style: none;
+                    }
+
+                    .color.originred {
+                        background: linear-gradient(#e53e44, #a82d31)
+                    }
+
+                    ;
+
+                    .color.originwhite {
+                        background: linear-gradient(#fafbff, #dddee2)
+                    }
+
+                    ;
+
+                    .color.eternalpink {
+                        background: linear-gradient(#d69bb1, #82425a)
+                    }
+
+                    ;
+
+                    .color.sabotgrey {
+                        background: linear-gradient(#aca9a6, #3b3b3b)
+                    }
+
+                    ;
+
+                    .color.evolvegreen {
+                        background: linear-gradient(#edfe5d, #7ead26)
+                    }
+
+                    ;
+                }
+
+                .specifications {
+                    list-style: none;
+                    font-size: 14px;
+                    padding: 0 15px;
+                    line-height: 18px;
+                    border-right: 1px solid gray;
+
+                    li {
+                        margin-bottom: 10px;
+                    }
+                }
+
+                button {
+                    margin-top: 2em;
+                    padding: 10px 20px;
+                    background-color: transparent;
+                    border: 2px solid hsl(0, 0%, 30%);
+                    cursor: pointer;
+                }
+            }
+
+            &:nth-child(1) {
+                animation: singlePcAnimation 0.5s 1s forwards;
+                opacity: 0;
+            }
+
+            &:nth-child(2) {
+                animation: singlePcAnimation 0.5s 1.5s forwards;
+                opacity: 0;
+            }
+
+            &:nth-child(3) {
+                animation: singlePcAnimation 0.5s 2s forwards;
+                opacity: 0;
+            }
+
+            &:nth-child(4) {
+                animation: singlePcAnimation 0.5s 2.5s forwards;
+                opacity: 0;
+            }
+        }
+    }
+}
+
+@keyframes singlePcAnimation {
+    from {
+        transform: translateX(-50px);
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+
+@media (max-width: 1024px) {
+    #prebuild-pc-section {
+        .computers {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    #prebuild-pc-section {
+        .computers {
+            grid-template-columns: repeat(1, 1fr);
+        }
+    }
+}
